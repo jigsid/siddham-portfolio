@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import ScrollProgress from "@/components/ScrollProgress";
+import AssetPreloader from "@/components/AssetPreloader";
 import "./globals.css";
 
 const geist = Geist({
@@ -57,6 +58,7 @@ export default function RootLayout({ children }) {
       <body>
         <ScrollProgress />
         {children}
+        <AssetPreloader />
       </body>
     </html>
   );

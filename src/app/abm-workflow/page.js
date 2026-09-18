@@ -31,6 +31,7 @@ export default function AbmWorkflow() {
             width={1000}
             height={3676}
             sizes="(max-width: 820px) 92vw, 700px"
+            unoptimized
             priority
             fetchPriority="high"
           />

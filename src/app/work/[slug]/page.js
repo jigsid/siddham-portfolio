@@ -48,6 +48,7 @@ export default async function WorkDetail({ params }) {
                     width={image.width}
                     height={image.height}
                     sizes="(max-width: 820px) 92vw, 700px"
+                    unoptimized
                     priority={index === 0}
                     fetchPriority={index === 0 ? "high" : "auto"}
                     loading={index === 0 ? undefined : "eager"}
