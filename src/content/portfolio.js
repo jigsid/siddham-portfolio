@@ -88,9 +88,9 @@ export const experience = [
     role: "Growth Engineer",
     summary: "Scaled outbound from zero for a $20M-funded company.",
     points: [
-      "Built the automation spine across HubSpot, Clay, Smartlead and internal APIs, scaling outbound from 0 to 300k emails a month.",
-      "Built and ran the cold-call system for 15 SDRs and 2 AEs across JustCall, SalesDialer, Clay and HubSpot, with Slack automations for instant reply alerts.",
-      "Ran analytics on show-up and demo rates; owned SDR onboarding, daily queries and process troubleshooting.",
+      "Built the automation spine across HubSpot, Clay, Smartlead and internal APIs, scaling outbound from 800 to 10,000 emails a day depending on the TAM and where the business was.",
+      "Built and ran the cold-call system for 15 SDRs and 2 AEs across JustCall, SalesDialer, Clay and HubSpot, plus Slack automations that turned SDR requests into shipped tooling.",
+      "Ran analytics across every call, list and rep - show-up rate and demos booked were the numbers I owned, and both moved.",
     ],
     proof: {
       kind: "image",
@@ -102,7 +102,7 @@ export const experience = [
     },
     detail: {
       intro:
-        "A $20M-funded company starting outbound from zero. I owned the data layer and the calling system that 15 SDRs and 2 AEs worked from every day.",
+        "A $20M-funded company starting outbound from zero. I owned the data layer, the calling system and the analytics that 15 SDRs and 2 AEs worked from every day.",
       blocks: [
         {
           h: "The problem",
@@ -116,28 +116,44 @@ export const experience = [
             "The automation spine across HubSpot, Clay, Smartlead and internal APIs - and the tooling around it that made the spine usable by fifteen people at once.",
           ],
           list: [
-            "Enrichment pipelines: list building, dedupe, waterfalls, validation.",
-            "Campaign automation that took outbound from 0 to 300k emails a month.",
+            "Enrichment pipelines: list building, dedupe, waterfalls, validation - 200+ hours in Clay alone, enough that I can rebuild most of it in-house.",
+            "Campaign automation that scaled from 800 emails a day to 10,000 when the TAM and the business called for it - roughly 300k a month at peak.",
+            "LinkedIn campaigns across 8 sending accounts - about 10k connection requests to date - run alongside email.",
             "The cold-call system: JustCall and SalesDialer wired to Clay and HubSpot, with the next account's context pre-staged before the current call ended.",
-            "Slack automations that fired on reply, because a positive answer is worth most in its first five minutes.",
-            "Analytics on show-up and demo rates, plus SDR onboarding and daily troubleshooting.",
+            "Slack automations that fired on reply in seconds, because a positive answer is worth most in its first five minutes.",
+            "Slack request channels where SDRs and other teams filed asks and got tooling back instead of tickets.",
+            "Analytics on every dial, list and rep - show-ups and demos booked included - plus SDR onboarding and daily troubleshooting.",
           ],
         },
         {
           h: "How it worked",
           body: [
             "Every record moved the same way: source, dedupe, enrich, score, tier, then into a sequence or a dial block. Dispositions wrote to the CRM in the same second the call ended - there was no 'I'll log it later,' because later is where pipeline truth goes to die.",
-            "Replies hit Slack instantly with the account attached, so the rep answered inside minutes rather than at end of day. Analytics ran on show-ups rather than demos booked, because a booked demo that no one attends is not a result.",
+            "Replies hit Slack instantly with the account attached, so the rep answered inside minutes rather than at end of day - in the channel the team already lived in.",
+            "Where a workflow lived was a decision, not a default. Anything that writes to the CRM stayed inside Clay - enrichment, scoring, waterfalls - so one system keeps the record authoritative and nothing forks. Everything custom - agents, logic, small internal tools - I built in Claude Code and shipped on Railway, versioned and testable, calling Clay's API where it helped.",
+          ],
+        },
+        {
+          h: "Running the numbers",
+          body: [
+            "I instrumented the whole motion - fifteen SDRs, every call, every list, every campaign - and ran it the way a revenue org several times the size would. Same math, smaller company, and I could act on what it said the same day.",
+          ],
+          list: [
+            "One definition per stage - dials, connects, conversations, meetings booked, shows, held - written down and owned. A number with two meanings is not a number.",
+            "Cuts per rep and per list, week over week: who was improving, which list carried pipeline, which script actually held a conversation.",
+            "The two numbers I owned: show-up rate and demos booked. Reminder cadences and pre-call context moved shows; list and talk-track iteration moved bookings - and a booked demo nobody attends is not a result.",
+            "One dashboard over CRM, dialer and campaign data, so leadership and the floor read the same truth.",
+            "Every test changed one variable and every result was written down - that discipline is most of what 'data-driven' actually means.",
           ],
         },
         {
           h: "What came out",
           body: [
-            "Outbound went from nothing to 300k emails a month, and the team booked 100+ demos in a quarter off the calling data I built. Fifteen SDRs ran on one system instead of fifteen spreadsheets.",
+            "Outbound went from nothing to 300k emails a month, and the team booked 100+ demos in a quarter off the calling data I built. Fifteen SDRs ran on one system instead of fifteen spreadsheets, and show-up rate and total demos booked both climbed as volume scaled - the analytics said where to push, and we pushed there.",
           ],
         },
       ],
-      stack: "HubSpot · Clay · Smartlead · JustCall · SalesDialer · Slack · Python · n8n",
+      stack: "HubSpot · Clay · Smartlead · JustCall · SalesDialer · Slack · Python · n8n · Claude Code · Railway",
     },
   },
   {
@@ -437,6 +453,19 @@ export const more = {
       ],
     },
     {
+      h: "How I run the numbers",
+      body: [
+        "The analytics a much larger revenue org runs on its floor, pointed at fifteen SDRs and every call they made - because 'the campaign feels slow' is not a diagnosis.",
+      ],
+      list: [
+        "Instrument everything, define everything: dials, connects, conversations, meetings booked, shows, held. One definition per stage, written down with an owner - otherwise two people quote two numbers and trust neither.",
+        "Analyze per rep and per list, week over week. Who is improving, which list carries pipeline, which talk track holds a conversation - the same cuts an enterprise RevOps team makes, at a scale where I can act on them the same day.",
+        "Own the numbers that matter: show-up rate and demos booked. Reminder cadences and pre-call context move shows; list and script iteration move bookings. Total demos booked is the output that compounds, not the activity that feels busy.",
+        "One dashboard over the CRM, the dialer and the campaigns, so leadership and the floor read the same truth. No hero numbers, no orphaned spreadsheets.",
+        "One variable per change, the list held constant, weeks compared as cohorts, the result written down. Decisions start from facts instead of the loudest claim in the room.",
+      ],
+    },
+    {
       h: "What I think",
       body: [
         "A few things I keep coming back to. They are how I decide what to build and what to ignore.",
@@ -450,6 +479,18 @@ export const more = {
       ],
     },
     {
+      h: "What lives in Clay, what lives in code",
+      body: [
+        "200+ hours inside Clay, and I can rebuild most of it in-house. The more useful question is not whether I can - it is what should live where. Data integrity decides.",
+      ],
+      list: [
+        "Inside Clay: anything that writes CRM data. Enrichment, scoring, waterfalls, list operations - it stays in the platform so one system keeps the record authoritative and nothing forks.",
+        "In code: everything custom. Agents, logic, small internal tools - Claude Code and Railway, versioned and testable, calling Clay's API where it helps.",
+        "The line is the CRM. A workflow that writes to the record of truth lives where the record lives; one that only reads and drafts can live in code.",
+        "Two versions of the same customer is the fastest way to lose a team's trust, so the split is a rule, not a preference.",
+      ],
+    },
+    {
       h: "What I work with",
       body: [
         "The stack changes as the job changes, but this is what is actually open on my machine.",
@@ -457,7 +498,7 @@ export const more = {
       list: [
         "Agents and code: Claude Code, opencode, Codex, Cursor, Grok CLI, Ollama, whisper.cpp, Playwright.",
         "GTM: Clay, Apollo, LinkedIn Sales Navigator, Apify, HubSpot, Smartlead, HeyReach, Instantly.",
-        "Data and build: Python, Next.js, PostgreSQL and Supabase, Prisma, n8n when a job has to run with the laptop closed.",
+        "Data and build: Python, Next.js, PostgreSQL and Supabase, Prisma, n8n when a job has to run with the laptop closed, Railway for the things I ship.",
       ],
     },
     {

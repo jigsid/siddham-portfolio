@@ -121,6 +121,26 @@ GTM engineering roles. Athra-caliber design language, receipts on every claim.
   so they fetch with the document instead of after layout. Measured: images complete
   in 85-263ms with 1-2 preload hints per page.
 
+## v8 — screening answers into content (2026-09-19)
+- Interview-style answers folded into the site, all in `src/content/portfolio.js`:
+  - Clay: 200+ hours, rebuildable in-house; build split explained — CRM-writing
+    workflows stay inside Clay (data integrity), custom agents/tools in Claude Code
+    + Railway.
+  - Volume: 800 → 10,000 emails a day depending on TAM and business state
+    (~300k/mo at peak); LinkedIn across 8 sending accounts, ~10k connection
+    requests to date.
+  - Cold call: full system, 15 SDRs + 2 AEs, JustCall/SalesDialer + Clay + HubSpot;
+    Slack reply alerts plus request channels that turn asks into tooling.
+  - Analytics: new `/work/gushwork` block "Running the numbers" (dials → connects →
+    conversations → meetings → shows → held, per-rep/per-list cuts, show-up rate
+    and demos booked owned and moved) + new `/more` sections "How I run the numbers"
+    and "What lives in Clay, what lives in code".
+- Proofs pending: user will supply screenshots (Clay hours, Smartlead/Instantly,
+  HeyReach requests, SDR analytics, Slack automations) — wire into `public/proofs/`
+  and proof galleries/captions when received.
+- Verified: lint + build clean (11 static pages incl. 4 role pages); `next start`
+  render check greps confirmed all new copy on `/more` and `/work/gushwork`.
+
 ## Later (v2)
 - Public OG image, custom domain metadataBase
 - Optional portrait, per-proof routes for long-form case studies
