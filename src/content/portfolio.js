@@ -29,8 +29,8 @@ export const experience = [
     role: "Growth Engineer",
     summary: "Internal tools and outreach systems for an investment-banking GTM motion.",
     points: [
-      "Built AI-powered internal tools and React dashboards that put pipeline, campaigns and CRM data on one operating surface.",
-      "Designed lead-list scoring and validation pipelines, then ran multi-channel email and LinkedIn sequences with high-volume, cost-optimized personalization.",
+      "Built AI tools and React dashboards so pipeline, campaigns and CRM data all lived in one place.",
+      "Scored and validated lead lists before anyone contacted them, then ran email and LinkedIn sequences with personalization that held up at volume.",
     ],
     proof: {
       kind: "image",
@@ -41,41 +41,46 @@ export const experience = [
       trigger: "Show me the proof",
       title: "Campaign performance, in Smartlead",
       caption:
-        "RE - Capvance Outreach: 2,376 sent, 95 replies at 8.42%, 52 of them positive. Above-average reply rate while holding deliverability - exactly what the page behind these screenshots says.",
+        "RE - Capvance Outreach: 2,376 sent, 95 replies (8.42%), 52 of them positive. An above-average reply rate without hurting deliverability.",
     },
     detail: {
       intro:
-        "Investment banking go-to-market: sell-side and buy-side mandates. My job was to make the pipeline legible and make outreach cheap at volume.",
+        "I worked on investment banking go-to-market, sell-side and buy-side mandates. My job was to make the pipeline readable and get outreach performing at volume.",
       blocks: [
         {
           h: "The problem",
           body: [
-            "Deal teams were working off spreadsheets and memory. Lists went stale, personalization was manual, and nobody could answer the only question that mattered: which campaign produced which conversation.",
+            "The deal teams worked out of spreadsheets and memory. Lists went stale, personalization was all manual, and nobody could really say which campaign produced which conversation.",
           ],
         },
         {
           h: "What I built",
           body: [
-            "AI-powered internal tools and React dashboards sitting on top of CRM data - pipeline tracking, campaign orchestration, and operational analytics in one surface.",
+            "The internal tooling: AI-assisted tools and React dashboards on top of our CRM data, covering pipeline tracking, campaign orchestration and the analytics we used every day.",
           ],
           list: [
-            "Lead-list scoring and validation pipelines, with a written reason attached to every score.",
-            "Multi-channel email and LinkedIn sequences with high-volume, cost-optimized personalization.",
-            "M&A and competitor acquisition-signal pipelines, plus Crunchbase scrapers for the long tail.",
-            "A personalization agent that drafts from the account's own record instead of mail-merge fields.",
+            "Lead-list scoring and validation pipelines, where every score came with a reason written down.",
+            "Email and LinkedIn sequences run side by side, with personalization that scaled without the cost running away.",
+            "Signal pipelines for M&A and competitor acquisitions, built off government filings, plus Crunchbase scrapers for the companies those miss.",
+            "A personalization agent that wrote from what we actually knew about an account, not mail-merge fields.",
           ],
         },
         {
           h: "How it worked",
           body: [
-            "Sources first - Crunchbase, Apollo, LinkedIn - then dedupe and validation before anything entered the CRM. Records were enriched and scored, and only what cleared the bar moved into a sequence. Sequences branched by signal type, so a company that had just announced a deal did not get the same opener as one that had simply gone quiet.",
-            "Replies were routed the moment they landed, and every step wrote back to the CRM so the dashboards stayed honest instead of becoming a second, prettier spreadsheet.",
+            "Everything started with the source - government filings, Crunchbase, Apollo, LinkedIn - then went through Clay for waterfall enrichment, dedupe and validation before it was allowed near the CRM. Only records that cleared the scoring bar went into a sequence, and sequences branched on signal type, so a company that had just announced a deal got a different opener than one that had gone quiet.",
+            "Replies got routed as soon as they landed, and every step wrote back to the CRM so the dashboards stayed accurate instead of turning into a second, prettier version of the truth.",
           ],
         },
         {
           h: "What came out",
-          body: [
-            "The flagship campaign ran 2,376 sends with 95 replies at 8.42%, 52 of them positive - above-average reply rate while holding deliverability. More useful than the number: the dashboards became the surface the team worked from daily, and the scoring model shipped documented so it survived me.",
+          body: [],
+          list: [
+            "Flagship campaign: 2,376 sends, 95 replies (8.42%), 52 of them positive - bounces under 1%.",
+            "Volume campaigns: 4,000+ sends each, still landing 6-10% reply rates.",
+            "LinkedIn: 356 HeyReach requests, 51% accepted, 62% of messages answered.",
+            "PlusVibe: 18,000+ leads contacted at a 1.7% bounce rate.",
+            "The dashboards became part of the team's daily routine, and the scoring model shipped documented so it kept working after I left.",
           ],
         },
       ],
@@ -86,11 +91,11 @@ export const experience = [
     slug: "gushwork",
     company: "Gushwork",
     role: "Growth Engineer",
-    summary: "Scaled outbound from zero for a $20M-funded company.",
+    summary: "Built outbound from zero at a $20M-funded company, and handled everything the 15-person SDR floor needed - onboarding, fixes, the lot.",
     points: [
-      "Built the automation spine across HubSpot, Clay, Smartlead and internal APIs, scaling outbound from 800 to 10,000 emails a day depending on the TAM and where the business was.",
-      "Built and ran the cold-call system for 15 SDRs and 2 AEs across JustCall, SalesDialer, Clay and HubSpot, plus Slack automations that turned SDR requests into shipped tooling.",
-      "Ran analytics across every call, list and rep - show-up rate and demos booked were the numbers I owned, and both moved.",
+      "Took cold email from zero to 300k sends a month, ran the cold-call system for 15 SDRs and 2 AEs, and kept LinkedIn outreach going alongside both, all on calling data I handled end to end in Clay.",
+      "Owned all of our n8n work - fixing what broke, building what was needed, with everything posting into Slack - plus the Python scrapers and enrichment tools (FullEnrich, LeadMagic, Apollo) behind the data.",
+      "Was the person the floor came to: I onboarded new SDRs, answered their technical questions, and ran the call and sales ops. We measured show-up rate, not just demos booked.",
     ],
     proof: {
       kind: "image",
@@ -98,99 +103,100 @@ export const experience = [
       trigger: "Show me the proof",
       title: "100+ demos booked off my calling data",
       caption:
-        "I built the backend system behind the SDR calling data. The team went on to book 100+ demos and scale past 30 a week - this is the post that announced it, with my name on the crew.",
+        "I built the data system the SDRs called from, and the team went on to book 100+ demos and pass 30 a week. This is the post that announced it.",
     },
     detail: {
       intro:
-        "A $20M-funded company starting outbound from zero. I owned the data layer, the calling system and the analytics that 15 SDRs and 2 AEs worked from every day.",
+        "When I joined, the company had raised $20M and outbound was basically starting from scratch. I built the email, calling and data layer that 15 SDRs and 2 AEs worked from, and dealt with everything else the floor ran into - onboarding new hires, fixing whatever broke mid-day.",
       blocks: [
         {
           h: "The problem",
           body: [
-            "There was no system. SDRs built their own lists, dialed from whatever they had, and logged outcomes when they remembered. Nothing downstream could be trusted because nothing upstream was consistent.",
+            "There wasn't really a system in place. SDRs built their own lists, dialed from whatever they had, and logged outcomes when they remembered to. When the inputs are that inconsistent, nothing you look at later can be trusted.",
           ],
         },
         {
           h: "What I built",
           body: [
-            "The automation spine across HubSpot, Clay, Smartlead and internal APIs - and the tooling around it that made the spine usable by fifteen people at once.",
+            "I built the outbound engine - email, calling and the data underneath both - plus the n8n and Slack layer that made it usable by the whole floor.",
           ],
           list: [
-            "Enrichment pipelines: list building, dedupe, waterfalls, validation - 200+ hours in Clay alone, enough that I can rebuild most of it in-house.",
-            "Campaign automation that scaled from 800 emails a day to 10,000 when the TAM and the business called for it - roughly 300k a month at peak.",
-            "LinkedIn campaigns across 8 sending accounts - about 10k connection requests to date - run alongside email.",
-            "The cold-call system: JustCall and SalesDialer wired to Clay and HubSpot, with the next account's context pre-staged before the current call ended.",
-            "Slack automations that fired on reply in seconds, because a positive answer is worth most in its first five minutes.",
-            "Slack request channels where SDRs and other teams filed asks and got tooling back instead of tickets.",
-            "Analytics on every dial, list and rep - show-ups and demos booked included - plus SDR onboarding and daily troubleshooting.",
+            "Calling data handled end to end in Clay: list building, dedupe, waterfall enrichment, validation. I put 200+ hours into Clay, enough that I could rebuild most of it outside the tool.",
+            "Email taken from zero: I wrote the copy, managed deliverability and domain reputation, built the lead lists, and scaled to 10,000 sends a day when the market called for it - about 300k a month at peak. I built the dashboards for all of it too.",
+            "LinkedIn outreach to the same ICPs, running next to email and calls instead of on its own.",
+            "The cold-call system: JustCall and SalesDialer connected to Clay and HubSpot, with the next account's info ready before the current call ended.",
+            "All of our n8n: fixing bugs, extending workflows, building new ones as needs came in. JavaScript and JSON did the glue work, and the important stuff posted into Slack - demos as they were booked, enrichment handed to SDRs in the channel they were already working in.",
+            "Python for scraping and the one-off automations that come up constantly, plus the supporting tools - FullEnrich, LeadMagic, Apollo, Zapmail, scraping extensions.",
+            "I was also part of the other side of growth: the company newsletter and influencer outreach.",
+            "Outside the tooling, I onboarded new SDRs, answered whatever technical questions came up, and handled the call and sales ops that kept the reps dialing. One person to ask instead of a ticket queue.",
           ],
         },
         {
           h: "How it worked",
           body: [
-            "Every record moved the same way: source, dedupe, enrich, score, tier, then into a sequence or a dial block. Dispositions wrote to the CRM in the same second the call ended - there was no 'I'll log it later,' because later is where pipeline truth goes to die.",
-            "Replies hit Slack instantly with the account attached, so the rep answered inside minutes rather than at end of day - in the channel the team already lived in.",
-            "Where a workflow lived was a decision, not a default. Anything that writes to the CRM stayed inside Clay - enrichment, scoring, waterfalls - so one system keeps the record authoritative and nothing forks. Everything custom - agents, logic, small internal tools - I built in Claude Code and shipped on Railway, versioned and testable, calling Clay's API where it helped.",
+            "Every record went through the same steps - source, dedupe, enrich, score, tier - and then into a sequence or a call block. Dispositions went into HubSpot as the call ended. Log it later and it never gets logged right.",
+            "When an SDR booked a demo, the prospect immediately got an email showing what the product would do for them, sent from our in-house tools, and it moved the show-up rate. Give someone something useful for free and they tend to show up. That's also why we switched the main metric from demos booked to show-ups - a demo nobody attends isn't a result.",
+            "n8n did the orchestration and I owned all of it, fixing and extending workflows as needs surfaced, usually the same day. Everything reported into Slack. Python handled the scraping and the small temporary automations that didn't deserve a full workflow.",
           ],
         },
         {
           h: "Running the numbers",
           body: [
-            "I instrumented the whole motion - fifteen SDRs, every call, every list, every campaign - and ran it the way a revenue org several times the size would. Same math, smaller company, and I could act on what it said the same day.",
+            "I put tracking on everything - all fifteen SDRs, every call, list and campaign - and ran the analytics more seriously than companies this size usually do. The usual setup at this scale is a default CRM dashboard counting demos booked, plus activity numbers nobody has actually defined. I sat in on the CEO's meetings with the data analytics team and brought that thinking down to the dialer: every test had a hypothesis, and every result led to one of two decisions - keep going or kill it.",
           ],
           list: [
-            "One definition per stage - dials, connects, conversations, meetings booked, shows, held - written down and owned. A number with two meanings is not a number.",
-            "Cuts per rep and per list, week over week: who was improving, which list carried pipeline, which script actually held a conversation.",
-            "The two numbers I owned: show-up rate and demos booked. Reminder cadences and pre-call context moved shows; list and talk-track iteration moved bookings - and a booked demo nobody attends is not a result.",
-            "One dashboard over CRM, dialer and campaign data, so leadership and the floor read the same truth.",
-            "Every test changed one variable and every result was written down - that discipline is most of what 'data-driven' actually means.",
+            "Different metrics for different channels - calling and cold email don't succeed on the same numbers - and we picked them before the test ran, not after.",
+            "One agreed definition for every stage: dials, connects, conversations, meetings booked, shows, held. If a number means two different things, it's not a number.",
+            "Week-over-week numbers per rep and per list, so we could see who was improving, which lists were carrying pipeline, and which scripts held up in real conversations.",
+            "The two numbers I was responsible for, show-up rate and demos booked, both went up. Reminders and better pre-call context lifted shows; better lists and talk tracks lifted bookings.",
+            "One dashboard over the CRM, the dialer and the campaigns, so management and the reps looked at the same numbers instead of arguing over different spreadsheets.",
           ],
         },
         {
           h: "What came out",
           body: [
-            "Outbound went from nothing to 300k emails a month, and the team booked 100+ demos in a quarter off the calling data I built. Fifteen SDRs ran on one system instead of fifteen spreadsheets, and show-up rate and total demos booked both climbed as volume scaled - the analytics said where to push, and we pushed there.",
+            "Outbound went from zero to 300k emails a month, and the team booked 100+ demos in a quarter off the calling data I built. Show-up rate went up as volume scaled, because the analytics told us where to push. Fifteen SDRs worked from one system instead of fifteen spreadsheets, and a few product features I suggested from the floor actually shipped.",
           ],
         },
       ],
-      stack: "HubSpot · Clay · Smartlead · JustCall · SalesDialer · Slack · Python · n8n · Claude Code · Railway",
+      stack: "HubSpot · Clay · Smartlead · JustCall · SalesDialer · Slack · n8n · Python · FullEnrich · LeadMagic · Apollo",
     },
   },
   {
     slug: "conek",
     company: "Conek",
     role: "Growth Engineer",
-    summary: "Client-acquisition machinery for an agency, built per client.",
+    summary: "Client-acquisition systems for an agency, built per client.",
     points: [
-      "Built client funnels, forms, calendars and CRM workflows in GoHighLevel, plus the dashboards tracking lead quality, appointments and conversion.",
-      "Shipped an agent that builds landing pages, and automated onboarding with SMS and email sequences for each client's accounts.",
+      "Built funnels, forms, calendars and CRM workflows in GoHighLevel for each client, with dashboards tracking lead quality, appointments and conversion.",
+      "Shipped an agent that builds landing pages, and automated onboarding with SMS and email sequences.",
     ],
     proof: null,
     detail: {
       intro:
-        "Agency work: the same acquisition problem, rebuilt per client. This is where I learned that a system you can re-deploy beats a system that is clever.",
+        "Agency work: the same acquisition problem, rebuilt for every client. Mostly it taught me to build things I could deploy again, rather than clever one-offs.",
       blocks: [
         {
           h: "What I built",
           body: [
-            "Funnels, forms, calendars and CRM workflows in GoHighLevel, with n8n stitching in Facebook Lead Ads and whatever else the client was already paying for.",
+            "Funnels, forms, calendars and CRM workflows in GoHighLevel, with n8n connecting Facebook Lead Ads and whatever else the client was already paying for.",
           ],
           list: [
-            "Dashboards tracking lead quality, appointments and conversion - so 'is this working' had an answer.",
-            "An agent that assembles landing pages on request, which removed the slowest step in onboarding.",
-            "Onboarding flows: SMS and email sequences fired per client account, automatically.",
+            "Dashboards for lead quality, appointments and conversion, so 'is this working?' had an actual answer.",
+            "An agent that puts landing pages together on request, which took out the slowest part of onboarding.",
+            "Automated onboarding: SMS and email sequences for each client account, nothing sent by hand.",
           ],
         },
         {
           h: "How it worked",
           body: [
-            "Each client got the same skeleton - capture, qualify, route, follow up - with the pieces swapped for their channels. Because the shape stayed constant, the dashboards stayed comparable, and a new client stopped being a new project.",
+            "Every client got the same skeleton - capture, qualify, route, follow up - with the pieces swapped out for their channels. Keeping that shape constant meant the dashboards stayed comparable, and a new client wasn't a new project every time.",
           ],
         },
         {
           h: "What it taught me",
           body: [
-            "Volume work is where systems pay. The second client took a fraction of the first one's effort, and by the fourth the only genuinely new work was the offer.",
+            "This is where systems paid off. The second client took a fraction of the effort of the first, and by the fourth, the only genuinely new work was figuring out the offer.",
           ],
         },
       ],
@@ -201,25 +207,25 @@ export const experience = [
     slug: "holisticon",
     company: "Holisticon",
     role: "Frontend Developer, contract",
-    summary: "Frontend work inside an engineering team.",
+    summary: "Frontend work inside a real engineering team.",
     points: [
-      "Designed and shipped frontend components against a pre-built unit-test suite, resolving bugs across the product.",
+      "Built frontend components against an existing unit-test suite, and worked through bugs across the product.",
     ],
     proof: null,
     detail: {
       intro:
-        "My first seat inside a real engineering team - before GTM, before Clay, when 'shipping' meant someone else had already written the tests.",
+        "My first job inside a real engineering team, before GTM and before Clay, back when shipping meant someone else had already written the tests.",
       blocks: [
         {
           h: "What I did",
           body: [
-            "React components built against a pre-existing unit-test suite, plus a long stretch of bug backlog cleanup across the product.",
+            "React components built against an existing unit-test suite, plus a long run of bug backlog cleanup across the product.",
           ],
         },
         {
           h: "What it taught me",
           body: [
-            "Tests are a spec written by someone who thought harder than you did. Working inside them taught me to design for the contract rather than the happy path - the same instinct I now apply to pipelines, where the contract is the schema and the happy path is a lie.",
+            "Tests are a spec written by someone who thought about the problem longer than you have. Working inside them taught me to build for the contract instead of the happy path - the same instinct I use on pipelines now, where the schema is the contract and the happy path is usually a lie.",
           ],
         },
       ],
@@ -382,45 +388,45 @@ export const now = {
 
 export const more = {
   intro:
-    "What I'm building, what I think, and what's going on in my head while I do it. Updated when something actually changes.",
+    "What I'm building, what I think, and what's going on in my head while I do it. I update this when something actually changes - which, lately, is most weeks.",
   sections: [
     {
       h: "What I'm working on",
       body: [
-        "Signal-based GTM is the thread everything else hangs off: instead of guessing who to contact, watch for movement and react while it still matters.",
+        "Signal-based GTM is the thread everything else hangs off, and honestly it's the most fun I've had building anything. Instead of guessing who to contact, you watch for movement and show up while it still matters.",
       ],
       list: [
-        "MCP servers wrapping internal APIs, so agents can read and write the warehouse, the CRM and the dialer through one interface.",
-        "Agents that watch for a trigger, enrich it, score it, and draft the first touch. A human still presses send - that is the point.",
-        "A personal brain: everything I learn, read and decide lands in an Obsidian vault wired to Claude Code and opencode, so context compounds instead of leaking.",
-        "Deterministic engines where accuracy matters. allie-events-engine is the one I shipped as proof - Python, six Claude Code skills, seventeen passing tests.",
+        "MCP servers wrapping internal APIs, so agents can read and write the warehouse, the CRM and the dialer through one interface. The first time an agent filed a real CRM update on its own, it felt like cheating.",
+        "Agents that watch for a trigger, enrich it, score it, and draft the first touch. A human still presses send - that's the point, and it's the part that keeps the whole thing trustworthy.",
+        "A personal brain: everything I learn, read and decide lands in an Obsidian vault wired to Claude Code and opencode, so context compounds instead of leaking. It's quietly changed how I think.",
+        "Deterministic engines where accuracy matters, and I'm a little obsessed with making them bulletproof. allie-events-engine is the one I shipped as proof - Python, six Claude Code skills, seventeen passing tests.",
       ],
     },
     {
       h: "How I think about a system",
       body: [
-        "Every GTM system I have built has the same shape: source, enrich, reason, act. Only one part is genuinely new - the reasoning layer - and that is the reason these systems are worth building now.",
+        "Every GTM system I have built has the same shape: source, enrich, reason, act. It's a simple idea, but the reasoning layer is the part that's genuinely new - and it's why right now is the best time to be building these systems.",
       ],
       list: [
         "Source: a data provider, the CRM, inbound, or product usage. Something has to tell you who to look at.",
-        "Enrich and orchestrate: fill the gaps, then structure the data so it is usable downstream.",
-        "Reason: a model reads the aggregate and makes inferences you could never encode in a formula.",
+        "Enrich and orchestrate: fill the gaps, then structure the data so it's usable downstream.",
+        "Reason: a model reads the aggregate and makes inferences you could never write as a formula. This is the part that still amazes me.",
         "Act: a Slack message, a sequence, a CRM update. Delivered where the rep already works.",
         "Adoption is the real failure mode. A system nobody uses is worse than no system, so the output has to be spoon-fed, not discovered.",
-        "Build for the model six months from now. If a system is not flexible, it is already on the clock.",
+        "Build for the model six months from now. If a system isn't flexible, it's already on the clock.",
       ],
     },
     {
       h: "Scoring, signals and noise",
       body: [
-        "Two scores, not one. Fit and timing are different facts, and they get acted on differently.",
+        "Two scores, not one. Fit and timing are different facts, and they get acted on differently. Getting that split right was one of my favourite 'aha' moments.",
       ],
       list: [
         "Firmographic score: the things that barely move - industry, headcount, location. Used for tiering.",
         "Signal score: the things that change fast - a hire, a funding round, a pricing-page visit, a new tool in the stack. Used for triggering.",
-        "Weight by funnel position. A pricing-page visit is not equivalent to a funding announcement, and a job listing that names your category beats one that merely implies it.",
-        "Job listings are underrated. The text leaks the roadmap: which tools, which regions, which initiatives.",
-        "Champion tracking is the cheapest pipeline there is - people who already liked you, landing somewhere new.",
+        "Weight by funnel position. A pricing-page visit isn't equivalent to a funding announcement, and a job listing that names your category beats one that merely implies it.",
+        "Job listings are underrated - the text leaks the roadmap: which tools, which regions, which initiatives. I could read them all day.",
+        "Champion tracking is the best pipeline there is - people who already liked you, landing somewhere new.",
         "Custom signals carry the alpha. If everyone in your market uses the same signal, nobody gets a reply.",
         "Noise kills signal programs. Ten unweighted alerts a day and the rep stops opening the channel.",
       ],
@@ -428,25 +434,25 @@ export const more = {
     {
       h: "Where AI GTM actually is",
       body: [
-        "Most of what is sold as AI GTM is volume with better grammar. The parts that are genuinely new are narrower than the pitch, and they are the parts I care about.",
+        "Most of what's sold as AI GTM is volume with better grammar. The genuinely new parts are narrower than the pitch - and they're exactly the parts I care about.",
       ],
       list: [
-        "AI SDRs solved drafting, not trust. Tools like Artisan, 11x and AiSDR are good at a competent first touch and dangerous when nobody reads it. The failure mode is rarely the model - it is domain reputation and personalization that no recipient asked for.",
-        "Signals beat lists. Everyone has the same firmographic data, so the only edge left is timing: who moved today. Athra, Common Room, UserGems and Fibbler are all chasing that, and it is the same thesis I build against.",
-        "Deliverability is the real ceiling. Google and Yahoo bulk-sender rules, DMARC alignment, per-mailbox send ceilings. You cannot out-prompt a burnt domain, so the infrastructure comes before the copy.",
-        "Answer engines are a GTM channel now. Buyers ask ChatGPT and Perplexity before they ask a vendor, which is why Profound, Peec AI and Otterly exist. Being cited is the new being shortlisted.",
-        "MCP is becoming the integration layer. One server an agent can read and write is cheaper than twelve tools with twelve APIs, and it is the reason this job turned into a builder's job.",
+        "AI SDRs solved drafting, not trust. Tools like Artisan, 11x and AiSDR are great at a competent first touch and dangerous when nobody reads it. The failure mode is rarely the model - it's domain reputation and personalization no recipient asked for.",
+        "Signals beat lists. Everyone has the same firmographic data, so the only edge left is timing: who moved today. Athra, Common Room, UserGems and Fibbler are all chasing that, and it's the same thesis I build against.",
+        "Deliverability is the real ceiling. Google and Yahoo bulk-sender rules, DMARC alignment, per-mailbox send ceilings. You can't out-prompt a burnt domain, so infrastructure comes before copy.",
+        "Answer engines are a GTM channel now. Buyers ask ChatGPT and Perplexity before they ask a vendor, which is why Profound, Peec AI and Otterly exist. Being cited is the new being shortlisted, and it's a fun problem to work on.",
+        "MCP is becoming the integration layer. One server an agent can read and write beats twelve tools with twelve APIs, and it's the reason this job turned into a builder's job.",
         "Deterministic where it matters. LLM for judgment, code for arithmetic: scores, clocks, costs. A verifier agent checks the output before a human ever sees it.",
       ],
     },
     {
       h: "How I would run it",
       body: [
-        "The same shape every time, whether the company sells to plants or to security teams.",
+        "Same shape every time, whether the company sells to plants or to security teams. Once you see the pattern, you can't unsee it.",
       ],
       list: [
         "One warehouse as the source of truth. If a number lives in two places, one of them is wrong.",
-        "Every agent run writes an audit row: input, output, model, cost, verdict, human decision. If I cannot explain why a lead got sequenced, I do not trust the lead.",
+        "Every agent run writes an audit row: input, output, model, cost, verdict, human decision. If I can't explain why a lead got sequenced, I don't trust the lead.",
         "Nothing client-facing auto-sends. Automation buys volume; judgment is the last mile.",
         "Instrument around show-ups and pipeline per unit of cost, not sends and opens.",
         "Every workflow ships with a runbook, so it survives the person who built it.",
@@ -455,11 +461,11 @@ export const more = {
     {
       h: "How I run the numbers",
       body: [
-        "The analytics a much larger revenue org runs on its floor, pointed at fifteen SDRs and every call they made - because 'the campaign feels slow' is not a diagnosis.",
+        "I love this part more than I probably should. It's the analytics a much bigger revenue org runs on its floor, pointed at fifteen SDRs and every call they made - because 'the campaign feels slow' isn't a diagnosis.",
       ],
       list: [
         "Instrument everything, define everything: dials, connects, conversations, meetings booked, shows, held. One definition per stage, written down with an owner - otherwise two people quote two numbers and trust neither.",
-        "Analyze per rep and per list, week over week. Who is improving, which list carries pipeline, which talk track holds a conversation - the same cuts an enterprise RevOps team makes, at a scale where I can act on them the same day.",
+        "Analyze per rep and per list, week over week. Who's improving, which list carries pipeline, which talk track holds a conversation - the same cuts an enterprise RevOps team makes, at a scale where I can act on them the same day.",
         "Own the numbers that matter: show-up rate and demos booked. Reminder cadences and pre-call context move shows; list and script iteration move bookings. Total demos booked is the output that compounds, not the activity that feels busy.",
         "One dashboard over the CRM, the dialer and the campaigns, so leadership and the floor read the same truth. No hero numbers, no orphaned spreadsheets.",
         "One variable per change, the list held constant, weeks compared as cohorts, the result written down. Decisions start from facts instead of the loudest claim in the room.",
@@ -468,20 +474,20 @@ export const more = {
     {
       h: "What I think",
       body: [
-        "A few things I keep coming back to. They are how I decide what to build and what to ignore.",
+        "A few things I keep coming back to. They're how I decide what to build and what to ignore.",
       ],
       list: [
         "Builder, not doer. The integration layer should be code, and the human should be judgment.",
         "Speed is the moat. Compress first touch to payment, and instrument around the number that actually moves - show-ups, not demos booked.",
         "Honest evidence. No fake personalization, no invented numbers. Deterministic output a human approves.",
-        "Concentrate on the channel that works. Assumptions need data behind them, and do not reinvent a wheel that is already turning.",
+        "Concentrate on the channel that works. Assumptions need data behind them, and don't reinvent a wheel that's already turning.",
         "Systematize self-improvement. Plan first, capture the lesson after every correction, and review the whole thing once a year.",
       ],
     },
     {
       h: "What lives in Clay, what lives in code",
       body: [
-        "200+ hours inside Clay, and I can rebuild most of it in-house. The more useful question is not whether I can - it is what should live where. Data integrity decides.",
+        "200+ hours inside Clay, and I can rebuild most of it in-house. But the more useful question isn't whether I can - it's what should live where. Data integrity decides, and I love a clean rule.",
       ],
       list: [
         "Inside Clay: anything that writes CRM data. Enrichment, scoring, waterfalls, list operations - it stays in the platform so one system keeps the record authoritative and nothing forks.",
@@ -493,7 +499,7 @@ export const more = {
     {
       h: "What I work with",
       body: [
-        "The stack changes as the job changes, but this is what is actually open on my machine.",
+        "The stack changes as the job changes, but this is what's actually open on my machine.",
       ],
       list: [
         "Agents and code: Claude Code, opencode, Codex, Cursor, Grok CLI, Ollama, whisper.cpp, Playwright.",
@@ -504,7 +510,7 @@ export const more = {
     {
       h: "Off the clock",
       body: [
-        "Guitar, martial arts, and the reading that keeps me honest - Paul Graham, Kevin Kelly, Steph Ango, and more science fiction than is probably good for me. Every year I sit down with the same forty questions and decide what changes next.",
+        "Guitar - slowly working through JustinGuitar's Grade 1 - plus martial arts, and a light biohacking habit: nootropics, 40Hz focus experiments, whatever rabbit hole is open that week. I read Paul Graham, Kevin Kelly and Steph Ango, and more science fiction than is probably good for me. Games on rotation: Cyberpunk 2077, Zelda BOTW, Persona 5, and Catan with anyone who'll sit still. Once a year I sit down with the same forty questions to decide what changes next, with a longer set every decade - the same system instinct, pointed at my own life.",
       ],
     },
   ],
