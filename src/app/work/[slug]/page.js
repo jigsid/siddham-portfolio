@@ -34,7 +34,6 @@ export default async function WorkDetail({ params }) {
             </span>{" "}
             All work
           </Link>
-          <p className="eyebrow">{job.company}</p>
           <h1>{job.role}</h1>
           <p className="sub">{job.detail.intro}</p>
 
@@ -73,8 +72,6 @@ export default async function WorkDetail({ params }) {
               ) : null}
             </div>
           ))}
-
-          <p className="src">{job.detail.stack}</p>
         </section>
       </div>
     </div>

@@ -25,6 +25,13 @@ export default function Projects() {
           </Reveal>
         ))}
       </div>
+      <Reveal>
+        <p className="more-cta">
+          <Link className="more-link" href="/more-projects">
+            see more projects
+          </Link>
+        </p>
+      </Reveal>
     </section>
   );
 }

@@ -17,7 +17,6 @@ export default function More() {
             </span>{" "}
             Back
           </Link>
-          <p className="eyebrow">More</p>
           <h1>More about me</h1>
           <p className="sub">{more.intro}</p>
 
@@ -36,11 +35,6 @@ export default function More() {
               ) : null}
             </div>
           ))}
-
-          <p className="src">
-            Last updated September 2026 ·{" "}
-            <a href={`mailto:${profile.email}`}>{profile.email}</a>
-          </p>
         </section>
       </div>
     </div>

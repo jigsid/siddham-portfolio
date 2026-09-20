@@ -18,7 +18,6 @@ export default function AbmWorkflow() {
           </span>{" "}
           All work
         </Link>
-        <p className="eyebrow">Systems</p>
         <h1>ABM workflow</h1>
         <p className="sub">
           The system on paper before the system in production - from TAM
@@ -422,10 +421,6 @@ export default function AbmWorkflow() {
             possible.
           </li>
         </ol>
-
-        <p className="src">
-          My working notes on the 2026 ABM playbook - kept here as I run it.
-        </p>
         </section>
       </div>
     </div>

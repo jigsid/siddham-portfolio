@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { codingProjects, profile } from "@/content/portfolio";
+import { codingProjects } from "@/content/portfolio";
 import ProofButton from "@/components/ProofButton";
 
 export const metadata = {
@@ -19,7 +19,6 @@ export default function CodingProjects() {
             </span>{" "}
             All work
           </Link>
-          <p className="eyebrow">Projects</p>
           <h1>Coding projects</h1>
           <p className="sub">
             Two products I built end to end - architecture, payments, the
@@ -65,14 +64,10 @@ export default function CodingProjects() {
                   ))}
                 </div>
               ))}
-              <p className="stackline">{project.detail.stack}</p>
               </div>
             );
           })}
 
-          <p className="src">
-            {profile.email} · {profile.location}
-          </p>
         </section>
       </div>
     </div>

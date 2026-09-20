@@ -17,7 +17,7 @@ export const profile = {
 export const about = {
   paragraphs: [
     "I'm a technical person who fell for marketing - I started out writing code, and go-to-market turned out to be the sweet spot: systems thinking on one side, people on the other.",
-    "I do my best work alongside people sharper than me, in places that would rather bet on me than half-watch me. Off the clock: guitar, martial arts, and an annual 40-question review that decides what I change next.",
+    "I do my best work alongside people sharper than me, in places that would rather bet on me than half-watch me. I learned most of what I know by breaking something, then writing down why so it only happened once.",
   ],
   pull: "Anything I do twice by hand is a bug against my own tooling, not a good week.",
 };
@@ -84,14 +84,13 @@ export const experience = [
           ],
         },
       ],
-      stack: "Clay · HubSpot · Smartlead · HeyReach · React · Next.js · Python · Claude Code · OpenRouter",
     },
   },
   {
     slug: "gushwork",
     company: "Gushwork",
     role: "Growth Engineer",
-    summary: "Built outbound from zero at a $20M-funded company, and handled everything the 15-person SDR floor needed - onboarding, fixes, the lot.",
+    summary: "Built outbound from zero, and handled everything the 15-person SDR floor needed - onboarding, fixes, the lot.",
     points: [
       "Took cold email from zero to 300k sends a month, ran the cold-call system for 15 SDRs and 2 AEs, and kept LinkedIn outreach going alongside both, all on calling data I handled end to end in Clay.",
       "Owned all of our n8n work - fixing what broke, building what was needed, with everything posting into Slack - plus the Python scrapers and enrichment tools (FullEnrich, LeadMagic, Apollo) behind the data.",
@@ -107,12 +106,12 @@ export const experience = [
     },
     detail: {
       intro:
-        "When I joined, the company had raised $20M and outbound was basically starting from scratch. I built the email, calling and data layer that 15 SDRs and 2 AEs worked from, and dealt with everything else the floor ran into - onboarding new hires, fixing whatever broke mid-day.",
+        "When I joined, outbound was basically starting from scratch. I built the email, calling and data layer that 15 SDRs and 2 AEs worked from, and dealt with everything else the floor ran into - onboarding new hires, fixing whatever broke mid-day.",
       blocks: [
         {
           h: "The problem",
           body: [
-            "There wasn't really a system in place. SDRs built their own lists, dialed from whatever they had, and logged outcomes when they remembered to. When the inputs are that inconsistent, nothing you look at later can be trusted.",
+            "The problem wasn't the reps. The system was basic and not optimized for scale - fine for a small team, with no room for the volume the business was heading toward.",
           ],
         },
         {
@@ -121,12 +120,12 @@ export const experience = [
             "I built the outbound engine - email, calling and the data underneath both - plus the n8n and Slack layer that made it usable by the whole floor.",
           ],
           list: [
-            "Calling data handled end to end in Clay: list building, dedupe, waterfall enrichment, validation. I put 200+ hours into Clay, enough that I could rebuild most of it outside the tool.",
-            "Email taken from zero: I wrote the copy, managed deliverability and domain reputation, built the lead lists, and scaled to 10,000 sends a day when the market called for it - about 300k a month at peak. I built the dashboards for all of it too.",
+            "Calling data handled end to end in Clay: list building, dedupe, waterfall enrichment, validation. Enough depth that I could rebuild most of it outside the tool.",
+            "Email taken from zero: I set up the domains and mailboxes for 10,000 sends a day of volume, wrote the copy, managed deliverability and domain reputation, built the lead lists, and scaled when the market called for it - about 300k a month at peak. I built the dashboards for all of it too.",
             "LinkedIn outreach to the same ICPs, running next to email and calls instead of on its own.",
             "The cold-call system: JustCall and SalesDialer connected to Clay and HubSpot, with the next account's info ready before the current call ended.",
             "All of our n8n: fixing bugs, extending workflows, building new ones as needs came in. JavaScript and JSON did the glue work, and the important stuff posted into Slack - demos as they were booked, enrichment handed to SDRs in the channel they were already working in.",
-            "Python for scraping and the one-off automations that come up constantly, plus the supporting tools - FullEnrich, LeadMagic, Apollo, Zapmail, scraping extensions.",
+            "Python for scraping and the one-off automations that come up constantly, plus the supporting tools - FullEnrich, LeadMagic, Apollo, Zapmail, Namecheap, scraping extensions.",
             "I was also part of the other side of growth: the company newsletter and influencer outreach.",
             "Outside the tooling, I onboarded new SDRs, answered whatever technical questions came up, and handled the call and sales ops that kept the reps dialing. One person to ask instead of a ticket queue.",
           ],
@@ -155,7 +154,7 @@ export const experience = [
         {
           h: "What came out",
           body: [
-            "Outbound went from zero to 300k emails a month, and the team booked 100+ demos in a quarter off the calling data I built. Show-up rate went up as volume scaled, because the analytics told us where to push. Fifteen SDRs worked from one system instead of fifteen spreadsheets, and a few product features I suggested from the floor actually shipped.",
+            "The core build was the cold-calling infrastructure - the data layer 15 SDRs and 2 AEs dialed from, wired into JustCall, SalesDialer, Clay and HubSpot - and the team booked 100+ demos in a quarter on it. Email went from zero to 300k sends a month, and the analytics told us where to push: show-up rate and demos booked both climbed as volume scaled. The rest: fifteen SDRs on one system instead of fifteen spreadsheets, and a few product features I suggested from the floor that actually shipped.",
           ],
         },
       ],
@@ -174,7 +173,7 @@ export const experience = [
     proof: null,
     detail: {
       intro:
-        "Agency work: the same acquisition problem, rebuilt for every client. Mostly it taught me to build things I could deploy again, rather than clever one-offs.",
+        "The same acquisition problem, rebuilt for every client - 20 of them running at once at the busiest. Mostly it taught me to build things I could deploy again, rather than clever one-offs.",
       blocks: [
         {
           h: "What I built",
@@ -183,14 +182,14 @@ export const experience = [
           ],
           list: [
             "Dashboards for lead quality, appointments and conversion, so 'is this working?' had an actual answer.",
-            "An agent that puts landing pages together on request, which took out the slowest part of onboarding.",
+            "An agent that builds landing pages on its own - plug and play, so any client's offer goes in and a finished page comes out, no rebuild per client. It took out the slowest part of onboarding.",
             "Automated onboarding: SMS and email sequences for each client account, nothing sent by hand.",
           ],
         },
         {
           h: "How it worked",
           body: [
-            "Every client got the same skeleton - capture, qualify, route, follow up - with the pieces swapped out for their channels. Keeping that shape constant meant the dashboards stayed comparable, and a new client wasn't a new project every time.",
+            "There were up to 20 clients running at once, and every one got the same skeleton - capture, qualify, route, follow up - with the pieces swapped out for their channels. Keeping that shape constant meant the dashboards stayed comparable, and a new client wasn't a new project every time.",
           ],
         },
         {
@@ -206,7 +205,7 @@ export const experience = [
   {
     slug: "holisticon",
     company: "Holisticon",
-    role: "Frontend Developer, contract",
+    role: "Frontend Developer",
     summary: "Frontend work inside a real engineering team.",
     points: [
       "Built frontend components against an existing unit-test suite, and worked through bugs across the product.",
@@ -223,9 +222,22 @@ export const experience = [
           ],
         },
         {
+          h: "What the work was like",
+          body: [],
+          list: [
+            "Building components to match an existing design system - props, states, edge cases, responsive behaviour.",
+            "Wiring the frontend to APIs: fetching, forms, validation, loading and error states.",
+            "Writing and fixing unit tests, then getting the PR through review.",
+            "Working down the bug backlog - layout glitches, state bugs, cross-browser quirks.",
+            "Picking up small features end to end, with a senior reviewing every diff.",
+            "The team rituals: standups, ticket grooming, code reviews.",
+          ],
+        },
+        {
           h: "What it taught me",
           body: [
-            "Tests are a spec written by someone who thought about the problem longer than you have. Working inside them taught me to build for the contract instead of the happy path - the same instinct I use on pipelines now, where the schema is the contract and the happy path is usually a lie.",
+            "How to work inside a team, mostly - and inside a large codebase I hadn't written a line of. Learning other people's patterns, matching the design system, changing code without breaking what surrounds it: that's a skill you only build in a codebase that's bigger than you are.",
+            "The other half was collaboration: picking up tickets, getting reviews, asking questions in the right place, and taking feedback on a diff without taking it personally. That has carried into every role since - most of the work happens with other people, and the code is always bigger than you are.",
           ],
         },
       ],
@@ -250,6 +262,14 @@ export const projects = [
     proof: null,
     detailHref: "/coding-projects",
     links: [],
+  },
+];
+
+export const moreProjects = [
+  {
+    title: "Hormozi Harness",
+    body: "A bird's-eye view of everything Alex Hormozi has posted online, mapped into one interactive tree on a single page. Scan the whole body of work at a glance, then drill into whatever topic matters to you - 7 modules, 55 frameworks and 200 rules.",
+    links: [{ label: "Live", href: "https://hormozi-brain-tree.vercel.app/" }],
   },
 ];
 
@@ -319,7 +339,7 @@ export const codingProjects = [
         {
           h: "The hard part",
           body: [
-            "Meta's webhook contract, not the AI. Signature verification, retries, duplicate deliveries, and per-account rate limits all have to be handled - so every event is idempotent, and a redelivered webhook never sends a second DM. Get that wrong and the product annoys the customer's customers.",
+            "Meta's webhook rules, not the AI. Signature verification, retries, duplicate deliveries, and per-account rate limits all have to be handled - so every event is idempotent, and a redelivered webhook never sends a second DM. Get that wrong and the product annoys the customer's customers.",
           ],
         },
       ],

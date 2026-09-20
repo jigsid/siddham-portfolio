@@ -699,10 +699,28 @@ h2 {
   text-decoration: none;
 }
 
+.more-cta {
+  margin-top: 22px;
+  display: none;
+}
+
 .more-link:hover {
   text-decoration: underline;
   text-underline-offset: 4px;
   text-decoration-thickness: 1.5px;
+}
+
+.doc a.more-link {
+  color: var(--accent);
+  text-decoration: none;
+  text-decoration-color: currentColor;
+}
+
+.doc a.more-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1.5px;
+  text-decoration-color: currentColor;
 }
 
 .doc .doc-h2 {
@@ -999,7 +1017,13 @@ h2 {
 
 .docpage {
   background: #fff;
+  min-height: 100vh;
+  min-height: 100dvh;
   padding: clamp(40px, 6vw, 80px) 0 clamp(60px, 8vw, 110px);
+}
+
+body:has(.docpage) {
+  background: #fff;
 }
 
 .doc-back {
