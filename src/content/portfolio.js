@@ -17,7 +17,7 @@ export const profile = {
 export const about = {
   paragraphs: [
     "I started out writing code. Go-to-market turned out to be the fit, because it asks for systems thinking and people skills in the same job, and I did not want to drop either one.",
-    "My best work happens next to people sharper than me, on teams that would rather bet on me than half-watch me. Most of what I know came from breaking something, then writing down why so it only broke once.",
+    "Worked in GTM infrastructure, CRM and MCP harness, with a strong bias toward action, shipping systems and execution. My best work happens next to people sharper than me, on teams that would rather bet on me than half-watch me.",
   ],
   pull: "Anything I do twice by hand is a bug in my own tooling, not a good week.",
 };
@@ -408,47 +408,58 @@ export const now = {
 
 export const more = {
   intro:
-    "What I'm building, what I think, and what's going on in my head while I do it. I update this when something changes, which lately is most weeks.",
+    "What I'm building, what I think, and what I'm learning as I go. I update this when something changes, which is most weeks.",
   sections: [
     {
       h: "What I'm working on",
       body: [
-        "Signal-based GTM is the thread everything else hangs off, and it is the most fun I have had building anything. Instead of guessing who to contact, you watch for movement and show up while it still matters.",
+        "Signal-based GTM is my main project, and the most fun I have had building anything. Instead of guessing who to contact, you watch for changes and reach out while they still matter.",
       ],
       list: [
-        "MCP servers wrapping internal APIs, so agents can read and write the warehouse, the CRM and the dialer through one interface. The first time an agent filed a real CRM update on its own, it felt like cheating.",
-        "Agents that watch for a trigger, enrich it, score it, and draft the first touch. The send button stays with a human, and that is the part that keeps the output trustworthy.",
-        "A personal brain: everything I learn, read and decide lands in this vault, wired to Claude Code and opencode, so context compounds instead of leaking. It has changed how I think.",
+        "MCP servers that wrap our internal APIs, so agents can read and write the warehouse, the CRM and the dialer through one interface. The first time an agent updated the CRM on its own, it felt like cheating.",
+        "Agents that watch for a trigger, enrich it, score it, and draft the first message. The send button stays with a human, and that is what keeps the output trustworthy.",
+        "A personal brain: everything I learn, read and decide goes into this vault, connected to Claude Code and opencode, so I keep my context instead of losing it. It has changed how I think.",
         "Deterministic engines where accuracy matters. allie-events-engine is the one I shipped as proof: Python, six Claude Code skills, seventeen passing tests.",
+      ],
+    },
+    {
+      h: "Harness, AI skills and orchestration",
+      body: [
+        "The same three ideas sit under most of what I build: put the knowledge in files, give the agent real tools, then split the work across agents and check the output.",
+      ],
+      list: [
+        "Harness: Hormozi Harness started as a map of everything Alex Hormozi has posted online - 7 modules, 55 frameworks, 200 rules - and now runs locally as an advisor. Three layers: a skill that loads the voice and routes the question, an MCP server with real tools (offer scoring, offer audit, money math, framework lookup, vault reading and writing), and the framework notes themselves in my vault. It triggers on its own when the task is about offers, leads, pricing or sales.",
+        "AI skills: I write down how I work as skills that an agent loads when a task matches. Writing rules, research steps, review checks. When I fix a mistake, the fix goes into a skill so it stays fixed. Around forty live in my archive and load on demand, not all at once.",
+        "Orchestration: agents run the work as a team. One plans and splits the job, others build, and a checker reviews the output before anything ships. Claude Code subagents and MCP servers do most of it, with Orca for longer multi-agent runs, and every run leaves a record I can read.",
       ],
     },
     {
       h: "How I think about a system",
       body: [
-        "Every GTM system I have built has the same shape: source, enrich, reason, act. The idea is simple, but the reasoning layer is the part that is new, and it is why these systems are worth building now.",
+        "Every GTM system I have built has the same shape: source, enrich, reason, act. The idea is simple, but the reasoning part is new, and that is why these systems are worth building now.",
       ],
       list: [
         "Source: a data provider, the CRM, inbound, or product usage. Something has to tell you who to look at.",
-        "Enrich and orchestrate: fill the gaps, then structure the data so it is usable downstream.",
-        "Reason: a model reads the aggregate and makes inferences you could never write as a formula. This is my favourite layer to build.",
+        "Enrich: fill in the gaps, then shape the data so the next step can use it.",
+        "Reason: a model reads everything together and makes connections you could never write as a formula. This is my favourite part to build.",
         "Act: a Slack message, a sequence, a CRM update. Delivered where the rep already works.",
-        "Adoption is the real failure mode. A system nobody uses is worse than no system, so the output has to be spoon-fed, not discovered.",
-        "Build for the model six months from now. If a system is not flexible, it is already on the clock.",
+        "The real failure is when nobody uses it. A system nobody opens is worse than no system, so the output has to land in front of the rep, not wait to be found.",
+        "Build for the model that will exist six months from now. If a system cannot adapt, it is already out of date.",
       ],
     },
     {
       h: "Scoring, signals and noise",
       body: [
-        "Two scores, not one. Fit and timing are different facts, and they get acted on differently. Splitting them apart changed how I build scoring.",
+        "Two scores, not one. Fit and timing are different things, and you act on them differently. Separating them changed how I build scoring.",
       ],
       list: [
-        "Firmographic score: the things that barely move - industry, headcount, location. Used for tiering.",
-        "Signal score: the things that change fast - a hire, a funding round, a pricing-page visit, a new tool in the stack. Used for triggering.",
-        "Weight by funnel position. A pricing-page visit is not equivalent to a funding announcement, and a job listing that names your category beats one that merely implies it.",
-        "Job listings are underrated. The text leaks the roadmap: which tools, which regions, which initiatives. I could read them all day.",
-        "Champion tracking is the pipeline I trust most: people who already liked you, landing somewhere new.",
-        "Custom signals carry the alpha. If everyone in your market uses the same signal, nobody gets a reply.",
-        "Noise kills signal programs. Ten unweighted alerts a day and the rep stops opening the channel.",
+        "Firmographic score: the things that barely move - industry, headcount, location. Used to decide who is worth targeting.",
+        "Signal score: the things that change fast - a hire, a funding round, a pricing-page visit, a new tool in the stack. Used to decide when to reach out.",
+        "Weight signals by where the buyer is. A pricing-page visit is not the same as a funding round, and a job post that names your category beats one that only hints at it.",
+        "Job listings are underrated. The text gives away the roadmap: which tools, which regions, which projects. I could read them all day.",
+        "Champion tracking is the pipeline I trust most: people who already liked your product, now working somewhere new.",
+        "The best signals are the ones you build yourself. If everyone in your market watches the same thing, nobody gets a reply.",
+        "Too much noise kills a signal program. Ten alerts a day with no ranking, and the rep stops opening the channel.",
       ],
     },
     {
@@ -457,12 +468,12 @@ export const more = {
         "Most of what is sold as AI GTM is volume with better grammar. The genuinely new parts are narrower than the pitch, and they are the parts I care about.",
       ],
       list: [
-        "AI SDRs solved drafting, not trust. Tools like Artisan, 11x and AiSDR are great at a competent first touch and dangerous when nobody reads it. The failure mode is rarely the model. It is domain reputation and personalization no recipient asked for.",
-        "Signals beat lists. Everyone has the same firmographic data, so the edge left is timing: who moved today. Athra, Common Room, UserGems and Fibbler are all chasing that, and it is the same thesis I build against.",
-        "Deliverability is the real ceiling. Google and Yahoo bulk-sender rules, DMARC alignment, per-mailbox send ceilings. You cannot out-prompt a burnt domain, so infrastructure comes before copy.",
-        "Answer engines are a GTM channel now. Buyers ask ChatGPT and Perplexity before they ask a vendor, which is why Profound, Peec AI and Otterly exist. Being cited is the new being shortlisted, and it is a fun problem to work on.",
-        "MCP is becoming the integration layer. One server an agent can read and write beats twelve tools with twelve APIs, and it is the reason this job turned into a builder's job.",
-        "Deterministic where it matters. LLM for judgment, code for arithmetic: scores, clocks, costs. A verifier agent checks the output before a human ever sees it.",
+        "AI SDRs solved drafting, not trust. Tools like Artisan, 11x and AiSDR write a solid first email, but it goes wrong when nobody reads it first. The problem is rarely the model. It is domain reputation and personalization nobody asked for.",
+        "Signals beat lists. Everyone has the same company data, so the only edge left is timing: who moved today. Athra, Common Room, UserGems and Fibbler all chase this, and it is the same idea I build against.",
+        "Deliverability is the real limit. Google and Yahoo bulk-sender rules, DMARC alignment, send limits per mailbox. No amount of good prompting fixes a burnt domain, so infrastructure comes before copy.",
+        "Answer engines are a GTM channel now. Buyers ask ChatGPT and Perplexity before they ask a vendor, which is why Profound, Peec AI and Otterly exist. Getting cited is the new getting shortlisted, and it is a fun problem to work on.",
+        "MCP is becoming the integration layer. One server an agent can read and write beats twelve tools with twelve APIs, and it is why this job turned into a builder's job.",
+        "Deterministic where it matters. LLM for judgment, code for numbers: scores, clocks, costs. A checker agent reviews the output before a human ever sees it.",
       ],
     },
     {
@@ -472,23 +483,23 @@ export const more = {
       ],
       list: [
         "One warehouse as the source of truth. If a number lives in two places, one of them is wrong.",
-        "Every agent run writes an audit row: input, output, model, cost, verdict, human decision. If I cannot explain why a lead got sequenced, I do not trust the lead.",
-        "Nothing client-facing auto-sends. Automation buys volume; judgment is the last mile.",
-        "Instrument around show-ups and pipeline per unit of cost, not sends and opens.",
+        "Every agent run leaves a record: input, output, model, cost, verdict, and what the human decided. If I cannot explain why a lead got contacted, I do not trust the lead.",
+        "Nothing client-facing sends on its own. Automation handles volume; a human makes the final call.",
+        "Track show-ups and pipeline per unit of cost, not sends and opens.",
         "Every workflow ships with a runbook, so it survives the person who built it.",
       ],
     },
     {
       h: "How I run the numbers",
       body: [
-        "This is the analytics a much bigger revenue org runs on its floor, pointed at fifteen SDRs and every call they made, because 'the campaign feels slow' is not a diagnosis.",
+        "This is the kind of analytics a much bigger revenue team runs, pointed at fifteen SDRs and every call they made, because 'the campaign feels slow' is not a diagnosis.",
       ],
       list: [
-        "Instrument everything, define everything: dials, connects, conversations, meetings booked, shows, held. One definition per stage, written down with an owner, otherwise two people quote two numbers and trust neither.",
-        "Analyze per rep and per list, week over week. Who is improving, which list carries pipeline, which talk track holds a conversation: the same cuts an enterprise RevOps team makes, at a scale where I can act on them the same day.",
-        "Own the numbers that matter: show-up rate and demos booked. Reminder cadences and pre-call context move shows; list and script iteration move bookings. Demos booked is the output that compounds; activity is not.",
-        "One dashboard over the CRM, the dialer and the campaigns, so leadership and the floor read the same numbers. No hero metrics, no orphaned spreadsheets.",
-        "One variable per change, the list held constant, weeks compared as cohorts, the result written down. Decisions start from facts instead of the loudest claim in the room.",
+        "Track everything, define everything: dials, connects, conversations, meetings booked, shows, held. One definition per stage, written down with an owner, or two people quote two numbers and trust neither.",
+        "Break it down per rep and per list, week over week. Who is improving, which list brings pipeline, which script holds a conversation. The same cuts a big RevOps team makes, at a scale where I can act on them the same day.",
+        "Own the numbers that matter: show-up rate and demos booked. Reminders and better pre-call context lift shows; better lists and scripts lift bookings. Bookings build on themselves; activity does not.",
+        "One dashboard over the CRM, the dialer and the campaigns, so leadership and the floor read the same numbers. No vanity metrics, no stray spreadsheets.",
+        "One change at a time, same list, weeks compared, result written down. Decisions start from facts instead of whoever is loudest in the room.",
       ],
     },
     {
@@ -497,11 +508,11 @@ export const more = {
         "A few things I keep coming back to. They are how I decide what to build and what to ignore.",
       ],
       list: [
-        "Builder, not doer. The integration layer should be code, and the human should be judgment.",
-        "Speed is the moat. Compress first touch to payment, and instrument around the number that moves: show-ups, not demos booked.",
+        "Build, do not just run the tools. The plumbing should be code; the human should bring judgment.",
+        "Speed wins. Shorten the time from first touch to payment, and track the number that actually moves: show-ups, not demos booked.",
         "Honest evidence. No fake personalization, no invented numbers. Deterministic output a human approves.",
-        "Concentrate on the channel that works. Assumptions need data behind them, and do not reinvent a wheel that is already turning.",
-        "Systematize self-improvement. Plan first, capture the lesson after every correction, and review the whole thing once a year.",
+        "Focus on the channel that works. Ideas need data behind them, and do not rebuild something that already runs.",
+        "Systematize getting better. Plan first, write down the lesson after every correction, and review the whole thing once a year.",
       ],
     },
     {
@@ -510,7 +521,7 @@ export const more = {
         "200+ hours inside Clay, and I can rebuild most of it in-house. The more useful question is not whether I can, but what should live where. Data integrity decides.",
       ],
       list: [
-        "Inside Clay: anything that writes CRM data. Enrichment, scoring, waterfalls, list operations. It stays in the platform so one system keeps the record authoritative and nothing forks.",
+        "In Clay: anything that writes CRM data. Enrichment, scoring, waterfalls, list work. It stays in the platform so one system stays authoritative and records do not split.",
         "In code: everything custom. Agents, logic, small internal tools, versioned and testable in Claude Code and Railway, calling Clay's API where it helps.",
         "The line is the CRM. A workflow that writes to the record of truth lives where the record lives; one that only reads and drafts can live in code.",
         "Two versions of the same customer is the fastest way to lose a team's trust, so the split is a rule, not a preference.",
