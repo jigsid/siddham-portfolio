@@ -18,6 +18,11 @@
   "images": {
     "binding": "IMAGES"
   },
+  "routes": [
+    { "pattern": "siddham.online", "custom_domain": true },
+    { "pattern": "www.siddham.online", "custom_domain": true }
+  ],
+  "workers_dev": true,
   "observability": {
     "enabled": true
   }
