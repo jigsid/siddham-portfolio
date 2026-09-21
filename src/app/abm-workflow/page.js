@@ -44,8 +44,8 @@ export default function AbmWorkflow() {
         </p>
         <p>
           Start by building a data-supported ICP (ideal customer profile)
-          model. Many GTM teams don&apos;t actually have their ICP written
-          down in an agreed-upon document.
+          model. Plenty of GTM teams do not have their ICP written down in a
+          single agreed document.
         </p>
         <p>
           Once your ICP is locked in, pull lists from multiple data sources to
@@ -146,13 +146,13 @@ export default function AbmWorkflow() {
             (instant, requires HubSpot Data Hub Pro).
           </li>
           <li>
-            Change the final action to &ldquo;Update record&rdquo; instead of
-            &ldquo;Create record&rdquo;.
+            Change the final action to &quot;Update record&quot; instead of
+            &quot;Create record&quot;.
           </li>
           <li>Enroll the backfill of companies and contacts.</li>
         </ol>
         <p>
-          Typically add an &ldquo;Enriched by Clay&rdquo; date field on company
+          Typically add an &quot;Enriched by Clay&quot; date field on company
           and contact records, which makes it easy to re-enrich on a 12-month
           freshness cycle.
         </p>
@@ -176,17 +176,18 @@ export default function AbmWorkflow() {
           <li>Create segments by tier and category</li>
           <li>
             Add on-demand enrichment buttons inside HubSpot so reps can click
-            &ldquo;Find additional stakeholders&rdquo; without leaving the CRM
+            &quot;Find additional stakeholders&quot; without leaving the CRM
           </li>
         </ul>
 
         <h3>Step 4: Signal tracking</h3>
         <p>
-          Signals are the part of an ABM engine that removes the silo between
-          sales and marketing. A signal is any data point that suggests buying
-          intent. When marketing drives 50 ad impressions to an ICP account,
-          that signal can be sent to the sales team, and both teams stay
-          aligned on the only stat that matters: ICP pipeline progression.
+          Signals are how an ABM engine keeps sales and marketing pointed at
+          the same data. A signal is any data point that suggests buying
+          intent. When marketing
+          drives 50 ad impressions to an ICP account, the sales team can see
+          it, so both teams end up reading the same number: ICP pipeline
+          progression.
         </p>
         <p>Signals split into three categories.</p>
         <ul>
@@ -275,8 +276,8 @@ export default function AbmWorkflow() {
           </li>
         </ol>
         <p>
-          In best cases, 20 to 40 percent of active pipeline is attributed to
-          signal activation (using a 7-day deal creation window).
+          When the system works, 20 to 40 percent of active pipeline traces
+          back to signal activation (using a 7-day deal creation window).
         </p>
 
         <h3>Step 5: Awareness scoring</h3>
@@ -334,16 +335,15 @@ export default function AbmWorkflow() {
           </li>
         </ul>
         <p>
-          Awareness stages solve a real shortcoming of lifecycle stages.
-          Lifecycle stages start after an opt-in, which means you miss a big
-          chunk of warm market activity that happens before the form fill.
+          Lifecycle stages start after an opt-in, so the warm activity that
+          happens before the form fill never shows up. Awareness stages cover
+          that gap.
         </p>
 
         <h3>Step 6: Demand generation</h3>
         <p>
-          By step six, the core ABM infrastructure is in place. Demand
-          generation becomes the focus. After implementing the earlier
-          components:
+          The core ABM infrastructure is in place by step six, which puts
+          demand generation on the table:
         </p>
         <ul>
           <li>Awareness score segments become ad retargeting audiences</li>
@@ -379,22 +379,20 @@ export default function AbmWorkflow() {
           </li>
         </ul>
         <p>
-          One ABM channel worth highlighting: targeted LinkedIn ads. Because
-          your TAM is small, you can upload company and contact lists to
-          LinkedIn ads and guarantee 100 percent of your spend lands on ICP
-          accounts.
+          Targeted LinkedIn ads deserve a closer look here. A small TAM is an
+          advantage: upload the company and contact lists and 100 percent of
+          your spend lands on ICP accounts.
         </p>
 
         <h3>Step 7: ICP pipeline progression reporting</h3>
         <p>
-          Reporting is straightforward, but the right six reports make or break
-          an ABM program.
+          Reporting is straightforward once the data is clean. These six
+          reports are the ones an ABM program lives on.
         </p>
         <ol>
           <li>
-            <b>ICP pipeline created (month over month).</b> The most accurate
-            read on ABM program success. This should grow from baseline if the
-            system is working.
+            <b>ICP pipeline created (month over month).</b> The clearest read
+            on whether the program is working. It should grow from baseline.
           </li>
           <li>
             <b>Signal influence by category.</b> Model each signal category
@@ -402,9 +400,9 @@ export default function AbmWorkflow() {
             attribution windows.
           </li>
           <li>
-            <b>Overdue signal tasks by rep.</b> Tasks are the most effective
-            way to assign work to reps, but only if they action them.
-            Percentage of overdue tasks tells you who needs more enablement.
+            <b>Overdue signal tasks by rep.</b> Tasks only work if reps action
+            them, so the percentage overdue tells you who needs more
+            enablement.
           </li>
           <li>
             <b>Awareness stage progression and regression by tier.</b> Accounts
@@ -417,8 +415,7 @@ export default function AbmWorkflow() {
           </li>
           <li>
             <b>Tier 1 accounts with no activity in the last 30 days.</b>{" "}
-            Accountability metric. This number should be as close to zero as
-            possible.
+            An accountability metric, and one that should sit close to zero.
           </li>
         </ol>
         </section>
