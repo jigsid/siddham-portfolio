@@ -16,10 +16,11 @@ export const profile = {
 
 export const about = {
   paragraphs: [
-    "I started out writing code. Go-to-market turned out to be the fit, because it asks for systems thinking and people skills in the same job, and I did not want to drop either one.",
-    "Worked in GTM infrastructure, CRM and MCP harness, with a strong bias toward action, shipping systems and execution. My best work happens next to people sharper than me, on teams that would rather bet on me than half-watch me.",
+    "Started my career in coding - learning things like data structures and algorithms, computer networks, databases, etc. Along with that, I was learning about Facebook ads, funnels, copywriting as a fun side-by-side.",
+    "Eventually, I stumbled into a gtm role, which is exactly what I liked working on, and started learning n8n, Clay, cold email, inbound, the whole LinkedIn ecosystem, crms - and eventually, from feb 2026, went heavy into combining AI into GTM (when OpenClaw went viral), and nowadays working with Hermes, MCPs, AI skills, and orchestration.",
+    "As an individual, I have a bias towards action, am aware of the latest AI stuff, and also have good taste (designs/songs).",
   ],
-  pull: "Anything I do twice by hand is a bug in my own tooling, not a good week.",
+  pull: '"put me on the hardest team working the hardest problems. i\'ll struggle for a few weeks, then i\'ll thrive."',
 };
 
 export const experience = [

@@ -19,10 +19,10 @@ export default function Hero() {
           {paragraph}
         </p>
       ))}
-      <p className="pull stag" style={{ "--i": 4 }}>
+      <p className="pull stag" style={{ "--i": 2 + about.paragraphs.length }}>
         {about.pull}
       </p>
-      <div className="hero-cta stag" style={{ "--i": 5 }}>
+      <div className="hero-cta stag" style={{ "--i": 3 + about.paragraphs.length }}>
         <Link className="more-link" href="/more">
           know more about me
         </Link>

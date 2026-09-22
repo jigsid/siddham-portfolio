@@ -43,6 +43,24 @@ body {
   overflow-x: hidden;
 }
 
+/*
+ * Small case voice: every piece of copy renders lowercase. Headings keep
+ * their authored capitalisation, so the name and section titles still read
+ * as headings.
+ */
+body {
+  text-transform: lowercase;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: none;
+}
+
 a {
   color: inherit;
 }
@@ -53,6 +71,8 @@ button {
   background: none;
   border: 0;
   cursor: pointer;
+  /* form controls reset text-transform, so buttons inherit the small-case voice */
+  text-transform: inherit;
 }
 
 ::selection {
@@ -370,7 +390,6 @@ h2 {
   font-family: var(--mono);
   font-size: 10.5px;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
   color: var(--faint);
   border: 1px solid var(--line);
   border-radius: 999px;
@@ -817,7 +836,6 @@ h2 {
   font-family: var(--mono);
   font-size: 11.5px;
   letter-spacing: 0.14em;
-  text-transform: uppercase;
   color: var(--accent-soft);
 }
 
