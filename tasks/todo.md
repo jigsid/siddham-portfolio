@@ -145,3 +145,13 @@ GTM engineering roles. Athra-caliber design language, receipts on every claim.
 - Public OG image, custom domain metadataBase
 - Optional portrait, per-proof routes for long-form case studies
 - Analytics (Vercel) once deployed
+
+## v9 - /work/capvance + /work/gushwork copy in Siddham's voice (2026-09-23)
+- Rewrote both detail pages to read like the hero: first person, contractions, plain words.
+  Cut the aphorism kickers ("a demo nobody attends is not a result", "second, prettier
+  version of the truth", "if a number means two things it is not a number").
+- Headings now: What wasn't working / What I built / How it worked / (Tracking the numbers) / Results.
+- No facts or numbers changed. Gushwork home-page summary line fixed ("...and a lot").
+- /more rewritten the same way: contractions, first person, aphorism kickers removed
+  ("once you see the pattern you cannot unsee it", "getting cited is the new getting
+  shortlisted", "the split is a rule, not a preference"). Same facts and tools.
