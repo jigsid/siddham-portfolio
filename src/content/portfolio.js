@@ -17,7 +17,7 @@ export const profile = {
 export const about = {
   paragraphs: [
     "Started my career in coding - learning things like data structures and algorithms, computer networks, databases, etc. Along with that, I was learning about Facebook ads, funnels, copywriting as a fun side-by-side.",
-    "Eventually, I stumbled into a gtm role, which is exactly what I liked working on, and started learning n8n, Clay, cold email, inbound, the whole LinkedIn ecosystem, crms - and eventually, from feb 2026, went heavy into combining AI into GTM (when OpenClaw went viral), and nowadays working with Hermes, MCPs, AI skills, and orchestration.",
+    "Eventually, I stumbled into a gtm role, which is exactly what I liked working on, and started getting into outbound, inbound, the whole LinkedIn ecosystem, crms - and eventually, from feb 2026, went heavy into combining AI into GTM (when OpenClaw went viral), and nowadays working with Hermes, MCPs, AI skills, and orchestration.",
     "As an individual, I have a bias towards action, am aware of the latest AI stuff, and also have good taste (designs/songs).",
   ],
   pull: '"put me on the hardest team working the hardest problems. i\'ll struggle for a few weeks, then i\'ll thrive."',
@@ -543,7 +543,7 @@ export const more = {
     {
       h: "Off the clock",
       body: [
-        "Guitar (slowly working through JustinGuitar's Grade 1), martial arts, and a light biohacking habit: nootropics, 40Hz focus experiments, whatever rabbit hole I'm down that week. I read Paul Graham, Kevin Kelly and Steph Ango, and probably more science fiction than is good for me. Games on rotation are Cyberpunk 2077, Zelda BOTW, Persona 5, and Catan with anyone who'll sit still long enough. Once a year I go through the same forty questions to decide what to change next, with a longer set every decade. It's the same habit I use for GTM systems, just pointed at my own life.",
+        "Guitar (slowly working through JustinGuitar's Grade 1), martial arts, and a light biohacking habit: nootropics, 40Hz focus experiments, whatever rabbit hole I'm down that week. I read Alex Hormozi, Paul Graham and Peter Thiel, and probably more science fiction than is good for me. Games on rotation are Cyberpunk 2077, God of War, and WWE 2K with anyone who'll sit still long enough. Once a year I go through the same forty questions to decide what to change next, with a longer set every decade. It's the same habit I use for GTM systems, just pointed at my own life.",
       ],
     },
   ],
