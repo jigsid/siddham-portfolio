@@ -6,6 +6,17 @@ export default function Closer() {
     <section className="closer">
       <div className="wrap">
         <div className="cbox">
+          <video
+            className="cvideo"
+            src="/handhold-wave.mp4"
+            poster="/handhold-wave-poster.webp"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            aria-hidden="true"
+          />
           <div className="cin">
             <h2 className="cstatement">{closer.statement}</h2>
             <div className="cta">

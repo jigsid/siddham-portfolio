@@ -591,35 +591,39 @@ h2 {
   border-radius: 24px;
   overflow: hidden;
   isolation: isolate;
-  background: #2a140c url("/mesh.webp") center / cover no-repeat;
+  background: #f5f2ec;
   padding: clamp(32px, 4vw, 54px) clamp(24px, 4vw, 60px);
   text-align: center;
 }
 
-.cbox::before {
-  content: "";
+.cvideo {
   position: absolute;
   inset: 0;
   z-index: 0;
-  background: linear-gradient(180deg, rgba(24, 10, 5, 0.62), rgba(24, 10, 5, 0.42));
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
 }
 
 .cbox::after {
   content: "";
   position: absolute;
-  left: 50%;
-  top: -30%;
-  width: 70%;
-  height: 90%;
-  transform: translateX(-50%);
-  z-index: 0;
-  background: radial-gradient(closest-side, rgba(255, 255, 255, 0.08), transparent);
-  filter: blur(24px);
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(246, 243, 237, 0.72),
+    rgba(246, 243, 237, 0.16) 42%,
+    rgba(246, 243, 237, 0.16) 58%,
+    rgba(246, 243, 237, 0.74)
+  );
+  pointer-events: none;
 }
 
 .cin {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .cstatement {
@@ -627,10 +631,9 @@ h2 {
   font-weight: 300;
   letter-spacing: -0.032em;
   line-height: 1.1;
-  color: #fff;
+  color: var(--ink);
   max-width: 22ch;
   margin: 0 auto;
-  text-shadow: 0 2px 34px rgba(0, 0, 0, 0.4);
 }
 
 .csub {
@@ -651,7 +654,7 @@ h2 {
   gap: 8px;
   font-size: 15.5px;
   font-weight: 500;
-  color: #fff;
+  color: var(--ink);
   padding: 11px 8px;
   transition: opacity 0.16s var(--eo);
 }
@@ -662,7 +665,7 @@ h2 {
 
 .copybtn .mono {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.66);
+  color: rgba(19, 19, 21, 0.55);
 }
 
 .ccontact {
@@ -677,22 +680,22 @@ h2 {
 .ccontact a,
 .ccontact span {
   font-size: 14.5px;
-  color: rgba(255, 255, 255, 0.78);
+  color: rgba(19, 19, 21, 0.72);
   text-decoration: none;
   transition: color 0.16s var(--eo);
 }
 
 .ccontact a:hover {
-  color: #fff;
+  color: var(--ink);
 }
 
 .ccontact span {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(19, 19, 21, 0.45);
 }
 
 .ccontact .ext {
   font-size: 11.5px;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(19, 19, 21, 0.42);
 }
 
 .doc .pkicker {
@@ -1211,5 +1214,11 @@ body:has(.docpage) {
   .proofbox,
   .proofdlg[open]::backdrop {
     animation: none;
+  }
+  .cvideo {
+    display: none;
+  }
+  .cbox {
+    background: #f5f2ec url("/handhold-wave-poster.webp") center / cover no-repeat;
   }
 }
